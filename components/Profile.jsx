@@ -4,6 +4,7 @@ import Heading from 'grommet/components/Header';
 const contents = () => (
   <section>
     <Heading>jey3dayo</Heading>
+    <Heading>skill: vim</Heading>
   </section>
 );
 

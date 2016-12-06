@@ -2,7 +2,7 @@ module.exports = {
   context: __dirname,
   entry: {
     jsx: './src/index.jsx',
-    jpg: ['./src/img/icon.jpg'],
+    jpg: './src/icon.jpg',
     css: './src/main.css',
     html: './src/index.html',
   },
@@ -20,6 +20,7 @@ module.exports = {
       { test: /\.jsx?$/, exclude: /node_modules/, loader: 'eslint-loader' },
     ],
     loaders: [
+      { test: /\.(png|jpg)$/, loader: 'file-loader?name=[name].[ext]' },
       { test: /\.html$/, loader: 'file?name=[name].[ext]' },
       { test: /\.css$/, loader: 'file?name=[name].[ext]' },
       { test: /\.(jpg|png)$/, loader: 'file?name=img/[name].[ext]' },
