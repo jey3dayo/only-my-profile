@@ -2,7 +2,8 @@ module.exports = {
   context: __dirname,
   entry: {
     jsx: './src/index.jsx',
-    css: ['./src/main.css'],
+    jpg: ['./src/img/icon.jpg'],
+    css: './src/main.css',
     html: './src/index.html',
   },
 
@@ -21,6 +22,7 @@ module.exports = {
     loaders: [
       { test: /\.html$/, loader: 'file?name=[name].[ext]' },
       { test: /\.css$/, loader: 'file?name=[name].[ext]' },
+      { test: /\.(jpg|png)$/, loader: 'file?name=img/[name].[ext]' },
       { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot-loader/webpack', 'babel-loader'] },
     ],
   },
