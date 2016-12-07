@@ -20,15 +20,23 @@ module.exports = {
       { test: /\.jsx?$/, exclude: /node_modules/, loader: 'eslint-loader' },
     ],
     loaders: [
+      { test: /\.json$/, loader: 'json' },
       { test: /\.(png|jpg)$/, loader: 'file-loader?name=[name].[ext]' },
       { test: /\.html$/, loader: 'file?name=[name].[ext]' },
       { test: /\.css$/, loader: 'file?name=[name].[ext]' },
+      { test: /\.scss$/, loader: 'style!css!sass?outputStyle=compressed' },
       { test: /\.(jpg|png)$/, loader: 'file?name=img/[name].[ext]' },
       { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot-loader/webpack', 'babel-loader'] },
     ],
   },
+  sassLoader: {
+    includePaths: [
+      './node_modules',
+      './node_modules/grommet/node_modules',
+    ],
+  },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['', '.js', '.jsx', '.json'],
   },
   eslint: {
     configFile: './.eslintrc',

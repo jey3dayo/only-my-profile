@@ -1,8 +1,15 @@
 import React from 'react';
+
+import 'grommet/grommet.min.css';
+import 'grommet/scss/vanilla/index.scss';
+
+import App from 'grommet/components/App';
 import Profile from '../components/Profile';
 
 const app = () => (
-  <Profile />
+  <App centered={false}>
+    <Profile />
+  </App>
 );
 
 export default app;
