@@ -20,13 +20,13 @@ module.exports = {
       { test: /\.jsx?$/, exclude: /node_modules/, loader: 'eslint-loader' },
     ],
     loaders: [
-      { test: /\.json$/, loader: 'json' },
-      { test: /\.(png|jpg)$/, loader: 'file-loader?name=[name].[ext]' },
-      { test: /\.html$/, loader: 'file?name=[name].[ext]' },
+      { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot-loader/webpack', 'babel-loader'] },
       { test: /\.css$/, loader: 'file?name=[name].[ext]' },
       { test: /\.scss$/, loader: 'style!css!sass?outputStyle=compressed' },
+      { test: /\.json$/, loader: 'json' },
+      { test: /\.jpe?g$|\.png$/, loader: 'url' },
+      { test: /\.(gif|html)$/, loader: 'file?name=[name].[ext]' },
       { test: /\.(jpg|png)$/, loader: 'file?name=img/[name].[ext]' },
-      { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot-loader/webpack', 'babel-loader'] },
     ],
   },
   sassLoader: {
