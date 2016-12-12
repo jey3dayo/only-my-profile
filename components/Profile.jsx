@@ -25,14 +25,13 @@ const contents = () => (
     <Hero backgroundImage="http://i.imgur.com/spjWbAU.jpg">
       <Box colorIndex="grey-2-a">
         <Card
-          heading="Heading"
-          description="Hero description text."
-          label="label"
+          label="Profile"
+          heading="Junya Nakazato"
+          description="My Skill: <br />JavaScript, React, Rails, PHP, Docker, AWS, ECS, Vim"
           link={<Anchor href="#" primary label="Link" />}
         />
       </Box>
     </Hero>
-
 
     <Footer justify="between">
       <Paragraph margin="none">© 2016 jey3dayo.net</Paragraph>
