@@ -5,6 +5,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import Template from '../containers/Template';
 import App from '../containers/App';
+import './main.css';
 
 window.React = React;
 ReactGA.initialize('UA-88340287-1');
