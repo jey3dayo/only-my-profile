@@ -1,5 +1,4 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 module.exports = {
   context: __dirname,
@@ -30,9 +29,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new CopyWebpackPlugin([
-      { from: './src/favicon.jpg' },
-    ]),
     new HtmlWebpackPlugin({
       hash: true,
       filename: 'index.html',
