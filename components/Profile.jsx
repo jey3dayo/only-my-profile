@@ -6,13 +6,10 @@ import Headline from 'grommet/components/Headline';
 import Hero from 'grommet/components/Hero';
 import Paragraph from 'grommet/components/Paragraph';
 import Box from 'grommet/components/Box';
-import Markdown from 'grommet/components/Markdown';
 
 const backgroundImage = '../src/hero-background.jpg';
 
-const profile = `
-\`\`\`json
-{
+const profile = `{
   "name": "Junya Nakazato",
   "job": "Front-End and Back-End Web Developer",
   "live": "Okinawa, Japan",
@@ -23,9 +20,7 @@ const profile = `
   "infrastructure": [ "AWS", "ECS", "CloudFront", "Docker", "Chef" ],
   "ops": [ "NewRelic", "Datadog", "Sentry" ],
   "tools": [ "Mac", "Vim", "zsh", "Vimperator" , "XCode" ]
-}
-\`\`\`
-`;
+}`;
 
 const contents = () => (
   <content>
@@ -40,10 +35,9 @@ const contents = () => (
     </Header>
 
     <Hero backgroundImage={backgroundImage}>
-      <Box colorIndex="grey-1-a">
-        <br />
-        <Headline size="small">Profile</Headline>
-        <Markdown content={profile} />
+      <Box colorIndex="grey-2-a">
+        <Headline size="small">Who am I ?</Headline>
+        <div style={{ whiteSpace: 'pre-wrap' }}>{profile}</div>
       </Box>
     </Hero>
 
