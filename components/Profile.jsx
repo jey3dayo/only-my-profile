@@ -6,6 +6,7 @@ import Headline from 'grommet/components/Headline';
 import Hero from 'grommet/components/Hero';
 import Paragraph from 'grommet/components/Paragraph';
 import Box from 'grommet/components/Box';
+import SocialShares from './SocialShares';
 
 const backgroundImage = '../src/hero-background.jpg';
 
@@ -39,6 +40,7 @@ const contents = () => (
         <Headline size="small">Who am I ?</Headline>
         <div style={{ whiteSpace: 'pre-wrap' }}>{profile}</div>
       </Box>
+      <SocialShares />
     </Hero>
 
     <Footer justify="between">
