@@ -15,15 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/j138/only-my-profile"
   },
   "keywords": [
     "React",
     "grommet",
     "webpack",
     "radium",
-    "Bable",
-    "ES6"
+    "bable"
   ],
   "author": "https://github.com/",
   "license": "MIT",

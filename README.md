@@ -6,6 +6,5 @@
 - React
 - grommet
 - radium
-- ES6
 - webpack
 - babel
