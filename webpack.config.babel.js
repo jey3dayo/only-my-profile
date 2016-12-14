@@ -17,15 +17,8 @@ module.exports = {
     loaders: [
       { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot-loader/webpack', 'babel-loader'] },
       { test: /\.css$/, loaders: ['style', 'css'] },
-      { test: /\.scss$/, loaders: ['style', 'css', 'sass?outputStyle=compressed'] },
       { test: /\.json$/, loader: 'json' },
       { test: /\.(jpe?g|png|gif)$/, loader: 'url' },
-    ],
-  },
-  sassLoader: {
-    includePaths: [
-      './node_modules',
-      './node_modules/grommet/node_modules',
     ],
   },
   plugins: [
