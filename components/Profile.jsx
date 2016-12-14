@@ -35,7 +35,7 @@ const contents = () => (
     </Header>
 
     <Hero backgroundImage={backgroundImage}>
-      <Box colorIndex="grey-2-a">
+      <Box colorIndex="grey-2-a" style={{ padding: '1rem' }}>
         <Headline size="small">Who am I ?</Headline>
         <div style={{ whiteSpace: 'pre-wrap' }}>{profile}</div>
       </Box>

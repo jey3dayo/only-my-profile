@@ -11,7 +11,6 @@
     "build-debug": "webpack --display-error-details --progress --colors",
     "build": "webpack --progress --colors",
     "deploy:firebase": "firebase deploy",
-    "deploy": "npm-run-all -s build deploy:firebase",
     "ncu": "ncu -a -x 'eslint-plugin-jsx-a11y'"
   },
   "repository": {
@@ -51,7 +50,6 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
     "file-loader": "^0.9.0",
-    "firebase-tools": "3.2.0",
     "json-loader": "0.5.4",
     "npm-run-all": "3.1.2",
     "style-loader": "^0.13.1",
@@ -82,8 +80,6 @@
     "react-helmet": "^3.2.3",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-router": "^3.0.0",
-    "react-tap-event-plugin": "^2.0.1",
-    "remark-parse": "2.2.0",
-    "superagent": "^3.2.1"
+    "react-tap-event-plugin": "^2.0.1"
   }
 }
