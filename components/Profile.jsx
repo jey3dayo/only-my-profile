@@ -14,7 +14,7 @@ const profile = `{
   "job": "Front-End and Back-End Web Developer",
   "live": "Okinawa, Japan",
   "love": [ "League of Legends", "GUILTY GEAR XX ΛCORE" ],
-  "frontend": [ "JavaScript", "React", "Material-UI", "jQuery" ],
+  "frontend": [ "JavaScript", "React", "Material-UI", "Grommet", "jQuery" ],
   "backend": [ "Node", "Ruby", "Java", "PHP", "Objective-C",
     "Rails", "Spring Framework", "FuelPHP" ],
   "infrastructure": [ "AWS", "ECS", "CloudFront", "Docker", "Chef" ],
