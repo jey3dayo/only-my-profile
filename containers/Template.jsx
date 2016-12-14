@@ -1,14 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-const title = 'jey3dayo.net';
-
 const Template = props => (
   <div>
-    <Helmet
-      defaultTitle={title}
-      titleTemplate={`%s - ${title}`}
-    />
+    <Helmet defaultTitle="jey3dayo.net" />
     {props.children}
   </div>
 );
