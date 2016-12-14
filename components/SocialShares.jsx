@@ -13,7 +13,7 @@ const contents = () => (
     <Button icon={<SocialFacebook />} target="blank" href="https://www.facebook.com/nakazajun" />
     <Button icon={<SocialInstagram />} target="blank" href="https://www.instagram.com/jey3dayo/" />
     <Button icon={<SocialGithub />} target="blank" href="https://github.com/j138" />
-    <Button icon={<SocialHatena />} target="blank" href="https://github.com/j138" />
+    <Button icon={<SocialHatena />} target="blank" href="http://b.hatena.ne.jp/J138" />
   </div>
 );
 
