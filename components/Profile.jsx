@@ -7,8 +7,7 @@ import Hero from 'grommet/components/Hero';
 import Paragraph from 'grommet/components/Paragraph';
 import Box from 'grommet/components/Box';
 import SocialShares from './SocialShares';
-
-const backgroundImage = '../src/hero-background.jpg';
+import backgroundImage from '../src/hero-background.jpg';
 
 const profile = `{
   "name": "Junya Nakazato",

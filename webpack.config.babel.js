@@ -18,7 +18,7 @@ module.exports = {
       { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot-loader/webpack', 'babel-loader'] },
       { test: /\.css$/, loaders: ['style', 'css'] },
       { test: /\.json$/, loader: 'json' },
-      { test: /\.(jpe?g|png|gif)$/, loader: 'url' },
+      { test: /\.(jpe?g|png|gif)$/, loader: 'url?limit=10000' },
     ],
   },
   plugins: [
