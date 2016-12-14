@@ -1,6 +1,11 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import merge from 'webpack-merge';
 
-module.exports = {
+const config = process.env.NODE_ENV === 'production' ?
+    require('./webpack.config.prod.babel.js') :
+    require('./webpack.config.dev.babel.js');
+
+const common = {
   context: __dirname,
   entry: {
     jsx: './src/index.jsx',
@@ -37,3 +42,5 @@ module.exports = {
     configFile: './.eslintrc',
   },
 };
+
+module.exports = merge(common, config);
