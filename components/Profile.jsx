@@ -25,7 +25,7 @@ const profile = `{
 
 const contents = () => (
   <content>
-    <Header fixed={false} float={false} splash={false}>
+    <Header fixed={false} float={false} splash={false} style={{ paddingLeft: '1rem' }}>
       <Heading>jey3dayo.net</Heading>
       <Box
         flex
