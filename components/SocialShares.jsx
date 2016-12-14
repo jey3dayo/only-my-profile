@@ -5,6 +5,7 @@ import SocialTwitter from 'grommet/components/icons/base/SocialTwitter';
 import SocialFacebook from 'grommet/components/icons/base/SocialFacebook';
 import SocialGithub from 'grommet/components/icons/base/SocialGithub';
 import SocialInstagram from 'grommet/components/icons/base/SocialInstagram';
+import SocialHatena from './SocialHatena';
 
 const contents = () => (
   <div>
@@ -12,6 +13,7 @@ const contents = () => (
     <Button icon={<SocialFacebook />} target="blank" href="https://www.facebook.com/nakazajun" />
     <Button icon={<SocialInstagram />} target="blank" href="https://www.instagram.com/jey3dayo/" />
     <Button icon={<SocialGithub />} target="blank" href="https://github.com/j138" />
+    <Button icon={<SocialHatena />} target="blank" href="https://github.com/j138" />
   </div>
 );
 
