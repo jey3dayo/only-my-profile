@@ -15,8 +15,8 @@ const profile = `{
   "live": "Okinawa, Japan",
   "love": [ "League of Legends", "GUILTY GEAR XX ΛCORE" ],
   "frontend": [ "JavaScript", "React", "Material-UI", "Grommet", "jQuery" ],
-  "backend": [ "Node", "Ruby", "Java", "PHP", "Objective-C",
-    "Rails", "Spring Framework", "FuelPHP" ],
+  "backend": [ "Node", "Ruby", "Java", "PHP", "Objective-C", "Rails",
+    "Spring Framework", "FuelPHP" ],
   "infrastructure": [ "AWS", "ECS", "CloudFront", "Docker", "Chef" ],
   "ops": [ "NewRelic", "Datadog", "Sentry" ],
   "tools": [ "Mac", "Vim", "zsh", "Vimperator" , "XCode" ]
@@ -24,21 +24,14 @@ const profile = `{
 
 const contents = () => (
   <content>
-    <Header fixed={false} float={false} splash={false} style={{ paddingLeft: '1rem' }}>
+    <Header fixed={false} float={false} splash={false} pad="small">
       <Heading>jey3dayo.net</Heading>
-      <Box
-        flex
-        justify="end"
-        direction="row"
-        responsive={false}
-      />
     </Header>
 
     <Hero backgroundImage={backgroundImage}>
-      <Box colorIndex="grey-2-a" style={{ padding: '1rem' }}>
+      <Box colorIndex="grey-2-a" pad="small">
         <Headline size="small">Who am I ?</Headline>
         <div style={{ whiteSpace: 'pre-wrap' }}>{profile}</div>
-        <JSONPretty json={profile} />
       </Box>
       <Box align="end">
         <SocialShares />

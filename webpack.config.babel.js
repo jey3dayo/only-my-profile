@@ -7,9 +7,7 @@ const config = process.env.NODE_ENV === 'production' ?
 
 const common = {
   context: __dirname,
-  entry: {
-    jsx: './src/index.jsx',
-  },
+  entry: './src/index.jsx',
   output: {
     path: `${__dirname}/public`,
     publicPath: '/',
