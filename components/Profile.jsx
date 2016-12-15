@@ -38,8 +38,11 @@ const contents = () => (
       <Box colorIndex="grey-2-a" style={{ padding: '1rem' }}>
         <Headline size="small">Who am I ?</Headline>
         <div style={{ whiteSpace: 'pre-wrap' }}>{profile}</div>
+        <JSONPretty json={profile} />
       </Box>
-      <SocialShares />
+      <Box align="end">
+        <SocialShares />
+      </Box>
     </Hero>
 
     <Footer justify="between">
