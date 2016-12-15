@@ -1,4 +1,6 @@
 import React from 'react';
+import Highlight from 'react-highlight';
+import 'highlight.js/styles/monokai.css';
 import Header from 'grommet/components/Header';
 import Footer from 'grommet/components/Footer';
 import Heading from 'grommet/components/Heading';
@@ -6,6 +8,7 @@ import Headline from 'grommet/components/Headline';
 import Hero from 'grommet/components/Hero';
 import Paragraph from 'grommet/components/Paragraph';
 import Box from 'grommet/components/Box';
+import Image from 'grommet/components/Image';
 import SocialShares from './SocialShares';
 import backgroundImage from '../src/hero-background.jpg';
 
@@ -28,13 +31,18 @@ const contents = () => (
       <Heading>jey3dayo.net</Heading>
     </Header>
 
-    <Hero backgroundImage={backgroundImage}>
-      <Box colorIndex="grey-2-a" pad="small">
-        <Headline size="small">Who am I ?</Headline>
-        <div style={{ whiteSpace: 'pre-wrap' }}>{profile}</div>
-      </Box>
-      <Box align="end">
-        <SocialShares />
+    <Hero background={<Image src={backgroundImage} fit="cover" />}>
+      <Box direction="row">
+        <Box basis="1/2" />
+        <Box basis="1/2" pad="medium">
+          <Box colorIndex="grey-2-a" pad="small">
+            <Headline size="small">Who am I ?</Headline>
+            <Highlight className="json-of-snippet bgInherit">{profile}</Highlight>
+          </Box>
+          <Box align="end" padding="medium">
+            <SocialShares />
+          </Box>
+        </Box>
       </Box>
     </Hero>
 
