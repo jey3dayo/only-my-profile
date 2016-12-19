@@ -15,10 +15,10 @@ const common = {
   },
   module: {
     preLoaders: [
-      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'eslint-loader' },
+      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'eslint' },
     ],
     loaders: [
-      { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot-loader/webpack', 'babel-loader'] },
+      { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot-loader/webpack', 'babel'] },
       { test: /\.css$/, loaders: ['style', 'css'] },
       { test: /\.json$/, loader: 'json' },
       { test: /\.(jpe?g|png|gif)$/, loader: 'url?limit=10000' },
