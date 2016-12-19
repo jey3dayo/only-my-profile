@@ -39,7 +39,7 @@ const contents = () => (
             <Headline size="small">Who am I ?</Headline>
             <Highlight className="json-of-snippet bgInherit">{profile}</Highlight>
           </Box>
-          <Box align="end" padding="medium">
+          <Box align="end">
             <SocialShares />
           </Box>
         </Box>

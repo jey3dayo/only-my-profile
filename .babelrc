@@ -1,5 +1,5 @@
 {
-    "presets": ["es2015", "stage-3", "react"],
+    "presets": ["es2015", "stage-3", "react", "react-optimize"],
     "plugins": [
       "transform-runtime",
       "react-hot-loader/babel"
