@@ -27,6 +27,9 @@
   "bugs": {
     "url": ""
   },
+  "greenkeeper": {
+    "ignore": ["eslint-plugin-jsx-a11y"]
+  },
   "homepage": "",
   "devDependencies": {
     "babel-core": "^6.21.0",
