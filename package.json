@@ -60,7 +60,7 @@
   "dependencies": {
     "browserify": "^13.1.1",
     "classnames": "^2.2.5",
-    "fbjs": "^0.8.6",
+    "fbjs": "^0.8.7",
     "grommet": "1.1.0",
     "highlight.js": "9.9.0",
     "history": "^4.5.0",
