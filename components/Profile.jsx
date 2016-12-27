@@ -25,13 +25,17 @@ const profile = `{
   "tools": [ "Mac", "Vim", "zsh", "Vimperator" , "XCode" ]
 }`;
 
+const bgStyle = {
+  filter: 'blur(4px)',
+};
+
 const contents = () => (
   <content>
     <Header fixed={false} float={false} splash={false} pad="small">
       <Heading>jey3dayo.net</Heading>
     </Header>
 
-    <Hero background={<Image src={backgroundImage} fit="cover" />}>
+    <Hero background={<Image style={bgStyle} src={backgroundImage} fit="cover" />}>
       <Box direction="row">
         <Box basis="1/2" />
         <Box basis="1/2" pad="medium">
