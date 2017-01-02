@@ -1,7 +1,7 @@
 {
   "name": "only-my-profile",
   "version": "1.0.0",
-  "description": "React + grommet syntax app",
+  "description": "React + grommet ES6 syntax app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
@@ -9,7 +9,8 @@
     "eslint:fix": "eslint --fix .",
     "start": "webpack-dev-server --history-api-fallback --hot --inline --progress --colors",
     "build-debug": "webpack --display-error-details --progress --colors",
-    "build": "webpack --progress --colors",
+    "build": "NODE_ENV=production webpack --progress --colors",
+    "build:win": "set NODE_ENV=production && webpack --progress --colors",
     "ncu": "ncu -a -x eslint-plugin-jsx-a11y"
   },
   "repository": {

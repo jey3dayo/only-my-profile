@@ -7,6 +7,5 @@
 
 - React
 - grommet
-- radium
 - webpack
 - babel
