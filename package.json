@@ -10,7 +10,7 @@
     "start": "webpack-dev-server --history-api-fallback --hot --inline --progress --colors",
     "build-debug": "webpack --display-error-details --progress --colors",
     "build": "NODE_ENV=production webpack --progress --colors",
-    "ncu": "ncu -a -x 'eslint-plugin-jsx-a11y'"
+    "ncu": "ncu -a -x eslint-plugin-jsx-a11y"
   },
   "repository": {
     "type": "git",
@@ -51,7 +51,7 @@
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "2.25.0",
     "json-loader": "0.5.4",
-    "npm-run-all": "3.1.2",
+    "npm-run-all": "4.0.0",
     "style-loader": "^0.13.1",
     "transfer-webpack-plugin": "^0.1.4",
     "url-loader": "0.5.7",
@@ -74,7 +74,7 @@
     "react-addons-update": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-ga": "2.1.2",
-    "react-helmet": "^3.2.3",
+    "react-helmet": "^3.3.0",
     "react-highlight": "0.9.0",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-router": "^3.0.0",
