@@ -4,7 +4,7 @@
   "description": "React + grommet ES6 syntax app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "npm-run-all eslint",
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
     "start": "webpack-dev-server --history-api-fallback --hot --inline --progress --colors",
