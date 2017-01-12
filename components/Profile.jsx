@@ -47,7 +47,7 @@ const contents = () => (
     </Hero>
 
     <Footer justify="between" pad="small">
-      <Paragraph margin="none">© 2016 jey3dayo.net</Paragraph>
+      <Paragraph margin="none">© 2017 jey3dayo.net</Paragraph>
     </Footer>
   </content>
 );
