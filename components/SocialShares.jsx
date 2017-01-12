@@ -5,8 +5,8 @@ import SocialTwitter from 'grommet/components/icons/base/SocialTwitter';
 import SocialFacebook from 'grommet/components/icons/base/SocialFacebook';
 import SocialGithub from 'grommet/components/icons/base/SocialGithub';
 import SocialInstagram from 'grommet/components/icons/base/SocialInstagram';
-import SocialHatena from './SocialHatena';
 import SocialBlog from 'grommet/components/icons/base/Blog';
+import SocialHatena from './SocialHatena';
 
 const contents = () => (
   <div>
