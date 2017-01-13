@@ -3,13 +3,18 @@ machine:
     version: 7.2.0
   timezone:
     Asia/Tokyo
-  post:
-    - curl -o- -L https://yarnpkg.com/install.sh | bash
+  environment:
+    YARN_VERSION: 0.18.1
+    PATH: "${PATH}:${HOME}/.yarn/bin:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
 dependencies:
-  cache_directories:
-    - ~/.yarn-cache
   pre:
-    - yarn --version
+    - |
+      if [[ ! -e ~/.yarn/bin/yarn || $(yarn --version) != "${YARN_VERSION}" ]]; then
+        curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN_VERSION
+      fi
+  cache_directories:
+    - ~/.yarn
+    - ~/.cache/yarn
   override:
     - yarn install
 test:
