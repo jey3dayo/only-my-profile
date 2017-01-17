@@ -29,7 +29,9 @@
     "url": ""
   },
   "greenkeeper": {
-    "ignore": [""]
+    "ignore": [
+      ""
+    ]
   },
   "homepage": "",
   "devDependencies": {
