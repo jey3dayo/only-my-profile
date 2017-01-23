@@ -67,7 +67,7 @@
     "browserify": "^13.3.0",
     "classnames": "^2.2.5",
     "fbjs": "^0.8.8",
-    "grommet": "1.2.0",
+    "grommet": "1.2.1",
     "highlight.js": "9.9.0",
     "history": "^4.5.1",
     "material-ui": "^0.16.7",
