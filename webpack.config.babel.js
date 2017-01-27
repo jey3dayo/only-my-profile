@@ -14,14 +14,11 @@ const common = {
     filename: 'bundle.js',
   },
   module: {
-    preLoaders: [
-      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'eslint' },
-    ],
-    loaders: [
-      { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot-loader/webpack', 'babel'] },
-      { test: /\.css$/, loaders: ['style', 'css'] },
-      { test: /\.json$/, loader: 'json' },
-      { test: /\.(jpe?g|png|gif)$/, loader: 'url?limit=10000' },
+    rules: [
+      { test: /\.jsx?$/, enforce: 'pre', exclude: /node_modules/, loader: 'eslint-loader' },
+      { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot-loader/webpack', 'babel-loader'] },
+      { test: /\.css$/, loaders: ['style-loader', 'css-loader'] },
+      { test: /\.(jpe?g|png|gif)$/, loader: 'url-loader?limit=10000' },
     ],
   },
   plugins: [
@@ -34,10 +31,7 @@ const common = {
     }),
   ],
   resolve: {
-    extensions: ['', '.js', '.jsx', '.json'],
-  },
-  eslint: {
-    configFile: './.eslintrc',
+    extensions: ['.js', '.jsx', '.json'],
   },
 };
 
