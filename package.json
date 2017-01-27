@@ -64,7 +64,7 @@
     "webpack-merge": "2.5.0"
   },
   "dependencies": {
-    "browserify": "^13.3.0",
+    "browserify": "^14.0.0",
     "classnames": "^2.2.5",
     "fbjs": "^0.8.8",
     "grommet": "1.2.1",
