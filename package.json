@@ -45,7 +45,7 @@
     "babel-preset-stage-3": "6.22.0",
     "babel-runtime": "^6.22.0",
     "css-loader": "^0.26.1",
-    "eslint": "^3.14.0",
+    "eslint": "^3.14.1",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-import": "^2.2.0",
@@ -58,16 +58,16 @@
     "style-loader": "^0.13.1",
     "transfer-webpack-plugin": "^0.1.4",
     "url-loader": "0.5.7",
-    "webpack": "1.14.0",
+    "webpack": "2.2.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-hot-middleware": "^2.15.0",
-    "webpack-merge": "2.4.0"
+    "webpack-merge": "2.5.0"
   },
   "dependencies": {
     "browserify": "^13.3.0",
     "classnames": "^2.2.5",
     "fbjs": "^0.8.8",
-    "grommet": "1.2.0",
+    "grommet": "1.2.1",
     "highlight.js": "9.9.0",
     "history": "^4.5.1",
     "material-ui": "^0.16.7",
