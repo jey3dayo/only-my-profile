@@ -51,8 +51,8 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
-    "file-loader": "^0.9.0",
-    "html-webpack-plugin": "2.26.0",
+    "file-loader": "^0.10.0",
+    "html-webpack-plugin": "2.28.0",
     "json-loader": "0.5.4",
     "npm-run-all": "4.0.1",
     "style-loader": "^0.13.1",
@@ -60,8 +60,8 @@
     "url-loader": "0.5.7",
     "webpack": "2.2.0",
     "webpack-dev-server": "^1.16.2",
-    "webpack-hot-middleware": "^2.15.0",
-    "webpack-merge": "2.5.0"
+    "webpack-hot-middleware": "^2.16.0",
+    "webpack-merge": "2.6.1"
   },
   "dependencies": {
     "browserify": "^14.0.0",
