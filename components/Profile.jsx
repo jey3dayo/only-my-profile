@@ -18,10 +18,10 @@ const profile = `{
   "live": "Okinawa, Japan",
   "love": [ "League of Legends", "GUILTY GEAR XX ΛCORE" ],
   "frontend": [ "JavaScript", "React", "Material-UI", "Grommet", "jQuery" ],
-  "backend": [ "Node", "Ruby", "Java", "PHP", "Objective-C", "Rails",
+  "backend": [ "Node.js", "Ruby", "Java", "PHP", "Objective-C", "Rails",
     "Spring Framework", "FuelPHP" ],
   "infrastructure": [ "AWS", "ECS", "CloudFront", "Docker", "Chef" ],
-  "ops": [ "NewRelic", "Datadog", "Sentry" ],
+  "ops": [ "CircleCI", "New Relic", "Datadog", "Sentry" ],
   "tools": [ "Mac", "Vim", "zsh", "Vimperator" , "XCode" ]
 }`;
 
