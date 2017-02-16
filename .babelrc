@@ -1,7 +1,17 @@
 {
-    "presets": ["es2015", "stage-3", "react", "react-optimize"],
-    "plugins": [
-      "transform-runtime",
-      "react-hot-loader/babel"
-    ]
+  "presets": [
+    [
+      "env", {
+        "targets": {
+          "browsers": ["last 3 versions", "safari >= 10"],
+          "loose": true
+        }
+      }],
+      "react",
+      "react-optimize"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "react-hot-loader/babel"
+  ]
 }
