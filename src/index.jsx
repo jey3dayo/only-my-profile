@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Template from '../containers/Template';
 import App from '../containers/App';
 import './main.css';
@@ -13,13 +13,20 @@ ReactGA.initialize('UA-88340287-1');
 const logPageView = () => {
   ReactGA.set({ page: window.location.pathname });
   ReactGA.pageview(window.location.pathname);
+  return null;
 };
 
 injectTapEventPlugin();
 ReactDOM.render((
-  <Router history={browserHistory} onUpdate={logPageView}>
-    <Route path="/" component={Template}>
-      <IndexRoute component={App} />
-    </Route>
-  </Router>
+  <Template>
+    <Router>
+      <div>
+        <Route path="/" component={logPageView} />
+        <Switch>
+          <Route exact path="/" component={App} />
+          <Redirect from="*" to="/" />
+        </Switch>
+      </div>
+    </Router>
+  </Template>
 ), document.getElementById('root'));
