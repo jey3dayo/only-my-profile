@@ -31,7 +31,7 @@ const contents = () => (
       <Heading>jey3dayo.net</Heading>
     </Header>
 
-    <Hero background={<Image src={backgroundImage} fit="cover" />}>
+    <Hero background={<Image src={backgroundImage} fit="cover" full />} size="large">
       <Box direction="row">
         <Box basis="1/2" />
         <Box basis="1/2" pad="medium">
