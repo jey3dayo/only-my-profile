@@ -10,5 +10,6 @@ body {
 }
 
 .bgInherit {
+  font-size: 1.0rem;
   background-color: inherit!important;
 }
