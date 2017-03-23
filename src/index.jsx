@@ -17,7 +17,7 @@ const logPageView = () => {
 };
 
 injectTapEventPlugin();
-ReactDOM.render((
+ReactDOM.render(
   <Template>
     <Router>
       <div>
@@ -28,5 +28,6 @@ ReactDOM.render((
         </Switch>
       </div>
     </Router>
-  </Template>
-), document.getElementById('root'));
+  </Template>,
+  document.getElementById('root'),
+);
