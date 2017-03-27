@@ -31,7 +31,7 @@ const common = {
     }),
   ],
   resolve: {
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.js', '.jsx'],
   },
 };
 
