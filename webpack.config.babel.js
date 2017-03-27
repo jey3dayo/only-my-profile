@@ -1,9 +1,9 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import merge from 'webpack-merge';
 
-const config = process.env.NODE_ENV === 'production' ?
-    require('./webpack.config.prod.babel.js') :
-    require('./webpack.config.dev.babel.js');
+const config = process.env.NODE_ENV === 'production'
+  ? require('./webpack.config.prod.babel.js')
+  : require('./webpack.config.dev.babel.js');
 
 const common = {
   context: __dirname,
@@ -16,7 +16,11 @@ const common = {
   module: {
     rules: [
       { test: /\.jsx?$/, enforce: 'pre', exclude: /node_modules/, loader: 'eslint-loader' },
-      { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot-loader/webpack', 'babel-loader'] },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loaders: ['react-hot-loader/webpack', 'babel-loader'],
+      },
       { test: /\.css$/, loaders: ['style-loader', 'css-loader'] },
       { test: /\.(jpe?g|png|gif)$/, loader: 'url-loader?limit=10000' },
     ],
