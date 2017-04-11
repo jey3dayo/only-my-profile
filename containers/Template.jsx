@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 const Template = props => (
@@ -9,7 +10,7 @@ const Template = props => (
 );
 
 Template.propTypes = {
-  children: React.PropTypes.shape.isRequired,
+  children: PropTypes.shape.isRequired,
 };
 
 export default Template;
