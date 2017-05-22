@@ -31,13 +31,18 @@ const contents = () => (
       <Heading>jey3dayo.net</Heading>
     </Header>
 
-    <Hero background={<Image src={backgroundImage} fit="cover" full />} size="large">
+    <Hero
+      background={<Image src={backgroundImage} fit="cover" full />}
+      size="large"
+    >
       <Box direction="row">
         <Box basis="1/2" />
         <Box basis="1/2" pad="medium">
           <Box colorIndex="grey-2-a" pad="small">
             <Headline size="small">Who am I ?</Headline>
-            <Highlight className="json-of-snippet bgInherit">{profile}</Highlight>
+            <Highlight className="json-of-snippet bgInherit">
+              {profile}
+            </Highlight>
           </Box>
           <Box colorIndex="grey-2-a" align="end">
             <SocialShares />
@@ -47,7 +52,9 @@ const contents = () => (
     </Hero>
 
     <Footer justify="between" pad="small">
-      <Paragraph margin="none">© 2017 jey3dayo.net</Paragraph>
+      <Paragraph>
+        <span role="img" aria-label="copyright">©</span>2017 jey3dayo.net
+      </Paragraph>
     </Footer>
   </content>
 );
