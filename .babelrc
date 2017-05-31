@@ -9,8 +9,5 @@
       }],
       "react",
       "react-optimize"
-  ],
-  "plugins": [
-    "react-hot-loader/babel"
   ]
 }

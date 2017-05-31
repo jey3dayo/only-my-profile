@@ -19,7 +19,7 @@ const common = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loaders: ['react-hot-loader/webpack', 'babel-loader'],
+        use: ['react-hot-loader', 'babel-loader'],
       },
       { test: /\.css$/, loaders: ['style-loader', 'css-loader'] },
       { test: /\.(jpe?g|png|gif)$/, loader: 'url-loader?limit=10000' },
