@@ -25,16 +25,13 @@ const profile = `{
   "tools": [ "Mac", "Vim", "zsh", "Vimperator" , "XCode" ]
 }`;
 
-const contents = () => (
-  <content>
+const contents = () =>
+  (<content>
     <Header fixed={false} float={false} splash={false} pad="small">
       <Heading>jey3dayo.net</Heading>
     </Header>
 
-    <Hero
-      background={<Image src={backgroundImage} fit="cover" full />}
-      size="large"
-    >
+    <Hero background={<Image src={backgroundImage} fit="cover" full />} size="large">
       <Box direction="row">
         <Box basis="1/2" />
         <Box basis="1/2" pad="medium">
@@ -56,7 +53,6 @@ const contents = () => (
         <span role="img" aria-label="copyright">©</span>2017 jey3dayo.net
       </Paragraph>
     </Footer>
-  </content>
-);
+  </content>);
 
 export default contents;
