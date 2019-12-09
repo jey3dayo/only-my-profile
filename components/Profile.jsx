@@ -16,13 +16,13 @@ const profile = `{
   "name": "Junya Nakazato",
   "job": "Front-End and Back-End Web Developer",
   "live": "Okinawa, Japan",
-  "love": [ "League of Legends", "GUILTY GEAR XX ΛCORE" ],
-  "frontend": [ "JavaScript", "React", "Material-UI", "Grommet", "jQuery" ],
-  "backend": [ "Node.js", "Ruby", "Java", "PHP", "Objective-C", "Rails",
-    "Spring Framework", "FuelPHP" ],
-  "infrastructure": [ "AWS", "ECS", "CloudFront", "Docker", "Chef" ],
+  "love": [ "League of Legends", "GUILTY GEAR XX ΛCORE and Xrd" ],
+  "frontend": [ "React.js", "Material-UI", "React Native" ],
+  "backend": [ "Next.js", "Rails", "Java", "PHP", "Objective-C",
+    "Spring Framework" ],
+  "infrastructure": [ "AWS", "ECS", "CloudFront", "Docker", "chef" ],
   "ops": [ "CircleCI", "New Relic", "Datadog", "Sentry" ],
-  "tools": [ "Mac", "Vim", "zsh", "Vimperator" , "XCode" ]
+  "tools": [ "Mac", "Vim", "zsh", "XCode", "Vimperator" ]
 }`;
 
 const contents = () =>
