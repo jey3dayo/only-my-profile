@@ -22,7 +22,7 @@ const profile = `{
     "Spring Framework" ],
   "infrastructure": [ "AWS", "ECS", "CloudFront", "Docker", "chef" ],
   "ops": [ "CircleCI", "New Relic", "Datadog", "Sentry" ],
-  "tools": [ "Mac", "Vim", "zsh", "XCode", "Vimperator" ]
+  "tools": [ "Mac", "neoVim", "zsh", "XCode", "Vivaldi", "Vimperator" ]
 }`;
 
 const contents = () => (
@@ -51,7 +51,7 @@ const contents = () => (
         <span role="img" aria-label="copyright">
           ©
         </span>
-        2017 jey3dayo.net
+        2019 jey3dayo.net
       </Paragraph>
     </Footer>
   </content>
