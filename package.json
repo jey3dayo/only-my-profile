@@ -1,15 +1,14 @@
 {
   "name": "only-my-profile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React + grommet ES6 syntax app",
   "main": "index.js",
   "scripts": {
-    "test": "npm-run-all -p eslint nsp",
-    "nsp": "nsp check",
+    "test": "npm-run-all -p eslint",
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
     "prettier": "find ./src ./containers ./components -name '*.js' -o -name '*.jsx' | xargs prettier-eslint --write",
-    "start": "webpack-dev-server --history-api-fallback --hot --inline --progress --colors",
+    "start": "webpack-dev-server --history-api-fallback --inline --progress --colors",
     "build:debug": "webpack -p --display-error-details --progress --colors",
     "build": "NODE_ENV=production webpack -p --progress --colors",
     "build:win": "set NODE_ENV=production && webpack -p --progress --colors"
@@ -54,7 +53,6 @@
     "html-webpack-plugin": "2.28.0",
     "json-loader": "0.5.4",
     "npm-run-all": "4.0.2",
-    "nsp": "2.6.3",
     "prettier": "^1.4.4",
     "prettier-eslint": "^6.3.0",
     "prettier-eslint-cli": "^4.1.1",
