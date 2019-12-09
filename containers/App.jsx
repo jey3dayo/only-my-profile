@@ -5,9 +5,10 @@ import App from 'grommet/components/App';
 import '../src/main.css';
 import Profile from '../components/Profile';
 
-const app = () =>
-  (<App centered={false}>
+const app = () => (
+  <App centered={false}>
     <Profile />
-  </App>);
+  </App>
+);
 
 export default app;
