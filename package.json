@@ -6,7 +6,6 @@
   "scripts": {
     "test": "npm-run-all -p eslint",
     "eslint": "eslint --ext .js,.jsx --fix ./",
-    "prettier": "find ./src ./containers ./components -name '*.js' -o -name '*.jsx' | xargs prettier-eslint --write",
     "start": "webpack-dev-server --history-api-fallback --inline --progress --colors",
     "build:debug": "webpack -p --display-error-details --progress --colors",
     "build": "NODE_ENV=production webpack -p --progress --colors",
