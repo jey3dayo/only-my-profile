@@ -1,5 +1,5 @@
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import merge from 'webpack-merge';
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const merge = require('webpack-merge');
 
 const config = process.env.NODE_ENV === 'production'
   ? require('./webpack.config.prod.babel.js')

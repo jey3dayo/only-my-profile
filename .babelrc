@@ -1,13 +1,27 @@
 {
   "presets": [
     [
-      "env", {
-        "targets": {
-          "browsers": ["last 3 versions", "safari >= 10"],
-          "loose": true
-        }
-      }],
-      "react",
-      "react-optimize"
+      "@babel/preset-env",
+      {
+        "debug": false,
+        "targets": "> 0.25%, not dead"
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ],
+    "@babel/plugin-transform-object-assign",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-proposal-nullish-coalescing-operator",
+    "babel-plugin-styled-components",
+    "react-hot-loader/babel",
+    "@babel/plugin-transform-runtime"
   ]
 }
