@@ -1,0 +1,24 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/only-my-profile
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: |
+            sudo apt-get update -qq
+            sudo apt-get -y install build-essential nodejs python-dev python-pip
+      - restore_cache:
+          keys:
+            - node-pkgs-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run: yarn
+      - run: yarn test
+      - run: yarn build
+      - save_cache:
+          key: node-pkgs-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+            - ./.cache/yarn
