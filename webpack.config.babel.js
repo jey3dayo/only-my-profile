@@ -3,8 +3,8 @@ const { merge } = require('webpack-merge');
 
 const config =
   process.env.NODE_ENV === 'production'
-    ? require('./webpack.config.prod.babel.js')
-    : require('./webpack.config.dev.babel.js');
+    ? require('./webpack.config.prod.babel')
+    : require('./webpack.config.dev.babel');
 
 const common = {
   context: __dirname,
