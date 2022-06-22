@@ -51,7 +51,7 @@ const contents = () => (
         <span role="img" aria-label="copyright">
           ©
         </span>
-        2019 jey3dayo.net
+        2022 jey3dayo.net
       </Paragraph>
     </Footer>
   </content>
